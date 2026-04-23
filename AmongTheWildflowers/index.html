@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Among The Wildflowers — Small-batch handcrafted soaps made with wild botanicals, pure essential oils, and ingredients straight from the earth.">
+    <title>Among The Wildflowers — Handcrafted Soap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== MOBILE NAV OVERLAY ===== -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <div class="mobile-nav-logo">
+            <span class="logo-accent">Among The</span>
+            <span class="logo-main">Wildflowers</span>
+        </div>
+        <a href="#products">Shop</a>
+        <a href="#story">Our Story</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">Among The</span>
+                <span class="logo-main">Wildflowers</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#products" class="nav-link">Shop</a></li>
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#ingredients" class="nav-link">Ingredients</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="nav-icon-btn" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </button>
+                <button class="nav-icon-btn" aria-label="Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home">
+            <div class="hero-botanical hero-botanical--left" aria-hidden="true">
+                <svg width="200" height="560" viewBox="0 0 200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 550 C96 480 88 420 84 370 C76 300 62 255 68 210 C74 168 90 145 98 118 C102 102 102 68 100 24" stroke="#AB8563" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <path d="M86 380 C68 358 44 338 32 312 C20 286 27 268 44 261 C60 254 78 276 86 380Z" fill="#6E5C46" opacity="0.2"/>
+                    <path d="M82 320 C65 298 50 275 52 253 C54 231 72 224 84 240 C92 252 84 294 82 320Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M76 262 C60 242 52 220 57 198 C62 176 78 174 87 192 C94 206 80 238 76 262Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M88 400 C110 380 136 364 150 344 C164 324 160 304 144 297 C128 290 108 310 88 400Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M84 342 C106 322 126 302 128 280 C130 258 116 250 104 260 C92 270 86 308 84 342Z" fill="#6E5C46" opacity="0.16"/>
+                    <path d="M80 284 C100 265 116 245 114 225 C112 205 98 200 88 212 C78 224 78 256 80 284Z" fill="#6E5C46" opacity="0.16"/>
+                    <circle cx="98" cy="120" r="5" fill="#AB8563" opacity="0.32"/>
+                    <circle cx="68" cy="212" r="4" fill="#AB8563" opacity="0.26"/>
+                    <circle cx="144" cy="298" r="3.5" fill="#AB8563" opacity="0.26"/>
+                    <circle cx="100" cy="26" r="7" fill="#C2B09D" opacity="0.45"/>
+                    <path d="M100 14 Q105 20 100 26 Q95 20 100 14Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M112 26 Q106 31 100 26 Q105 21 112 26Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M100 38 Q95 32 100 26 Q105 32 100 38Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M88 26 Q94 21 100 26 Q95 31 88 26Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M108 18 Q106 24 100 26 Q99 19 108 18Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M108 34 Q103 31 100 26 Q107 25 108 34Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M92 34 Q97 31 100 26 Q93 25 92 34Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M92 18 Q94 24 100 26 Q100 19 92 18Z" fill="#AB8563" opacity="0.28"/>
+                </svg>
+            </div>
+
+            <div class="hero-content">
+                <p class="hero-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    Small Batch &nbsp;·&nbsp; Handcrafted &nbsp;·&nbsp; All Natural
+                    <span class="eyebrow-line"></span>
+                </p>
+                <h1 class="hero-title">
+                    Where Nature<br>Meets <em>Handcrafted</em><br>Care
+                </h1>
+                <p class="hero-subtitle">
+                    Each bar is thoughtfully poured with wild-gathered botanicals,
+                    pure essential oils, and ingredients straight from the earth.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn--primary">Shop the Collection</a>
+                    <a href="#story" class="btn btn--ghost">Discover Our Story</a>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <strong>200+</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>12</strong>
+                        <span>Seasonal Blends</span>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <strong>100%</strong>
+                        <span>Natural Ingredients</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-botanical hero-botanical--right" aria-hidden="true">
+                <svg width="200" height="560" viewBox="0 0 200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M100 550 C104 480 112 420 116 370 C124 300 138 255 132 210 C126 168 110 145 102 118 C98 102 98 68 100 24" stroke="#AB8563" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                    <path d="M114 380 C132 358 156 338 168 312 C180 286 173 268 156 261 C140 254 122 276 114 380Z" fill="#6E5C46" opacity="0.2"/>
+                    <path d="M118 320 C135 298 150 275 148 253 C146 231 128 224 116 240 C108 252 116 294 118 320Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M124 262 C140 242 148 220 143 198 C138 176 122 174 113 192 C106 206 120 238 124 262Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M112 400 C90 380 64 364 50 344 C36 324 40 304 56 297 C72 290 92 310 112 400Z" fill="#6E5C46" opacity="0.18"/>
+                    <path d="M116 342 C94 322 74 302 72 280 C70 258 84 250 96 260 C108 270 114 308 116 342Z" fill="#6E5C46" opacity="0.16"/>
+                    <path d="M120 284 C100 265 84 245 86 225 C88 205 102 200 112 212 C122 224 122 256 120 284Z" fill="#6E5C46" opacity="0.16"/>
+                    <circle cx="102" cy="120" r="5" fill="#AB8563" opacity="0.32"/>
+                    <circle cx="132" cy="212" r="4" fill="#AB8563" opacity="0.26"/>
+                    <circle cx="56" cy="298" r="3.5" fill="#AB8563" opacity="0.26"/>
+                    <circle cx="100" cy="26" r="7" fill="#C2B09D" opacity="0.45"/>
+                    <path d="M100 14 Q105 20 100 26 Q95 20 100 14Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M112 26 Q106 31 100 26 Q105 21 112 26Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M100 38 Q95 32 100 26 Q105 32 100 38Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M88 26 Q94 21 100 26 Q95 31 88 26Z" fill="#AB8563" opacity="0.38"/>
+                    <path d="M108 18 Q106 24 100 26 Q99 19 108 18Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M108 34 Q103 31 100 26 Q107 25 108 34Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M92 34 Q97 31 100 26 Q93 25 92 34Z" fill="#AB8563" opacity="0.28"/>
+                    <path d="M92 18 Q94 24 100 26 Q100 19 92 18Z" fill="#AB8563" opacity="0.28"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ===== VALUES STRIP ===== -->
+        <section class="values">
+            <div class="container">
+                <div class="values-grid">
+                    <div class="value-item reveal">
+                        <div class="value-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>100% Natural</h3>
+                        <p>No synthetic fragrances or harsh chemicals — only what the earth provides.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                        </div>
+                        <h3>Small Batch</h3>
+                        <p>Every bar is hand-poured and hand-cut in small batches with care and intention.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                        </div>
+                        <h3>Made with Love</h3>
+                        <p>Inspired by wildflower meadows and rooted in a deep love for the natural world.</p>
+                    </div>
+                    <div class="value-item reveal">
+                        <div class="value-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
+                        </div>
+                        <h3>Eco Conscious</h3>
+                        <p>Minimal packaging, plastic-free wrapping, and sustainably sourced ingredients.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURED PRODUCTS ===== -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">— Current Collection —</p>
+                    <h2 class="section-title">Our Handcrafted Soaps</h2>
+                    <p class="section-subtitle">Each bar is a little piece of nature, wrapped in love and intention.</p>
+                </div>
+                <div class="carousel-wrapper">
+                    <button class="carousel-arrow carousel-arrow--prev" aria-label="Previous products" disabled>
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <div class="carousel-track-container">
+                        <div class="carousel-track" id="carouselTrack"></div>
+                    </div>
+                    <button class="carousel-arrow carousel-arrow--next" aria-label="Next products">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
+                </div>
+                <div class="products-cta reveal">
+                    <a href="#" class="btn btn--primary">View Full Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== OUR STORY ===== -->
+        <section class="story" id="story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-visual reveal">
+                        <div class="story-frame">
+                            <div class="story-frame-inner">
+                                <svg width="130" height="130" viewBox="0 0 130 130" fill="none" aria-hidden="true">
+                                    <circle cx="65" cy="65" r="18" fill="#C2B09D" opacity="0.6"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(0 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(45 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(90 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(135 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(180 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(225 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(270 65 65)"/>
+                                    <ellipse cx="65" cy="38" rx="8" ry="16" fill="#AB8563" opacity="0.45" transform="rotate(315 65 65)"/>
+                                    <circle cx="65" cy="65" r="10" fill="#D2D1D0" opacity="0.5"/>
+                                </svg>
+                            </div>
+                            <div class="story-frame-border"></div>
+                        </div>
+                        <div class="story-quote-badge">
+                            <p>"Made with<br>wildflower love"</p>
+                        </div>
+                    </div>
+                    <div class="story-content reveal">
+                        <p class="section-eyebrow">— Our Story —</p>
+                        <h2 class="section-title">From the Meadow<br>to Your Morning</h2>
+                        <p class="story-text">
+                            Among The Wildflowers was born from a love of long walks through blooming meadows and a deep desire to slow down and reconnect with nature's simplest gifts.
+                        </p>
+                        <p class="story-text">
+                            What started as a kitchen-table hobby — mixing oils, herbs, and botanicals gathered from local fields — grew into something beautiful. Every soap we make carries the essence of that first quiet afternoon in the wildflowers.
+                        </p>
+                        <p class="story-text">
+                            We believe your morning routine should feel like a small ceremony. That's why we pour every bar with the same care, intention, and wild-grown ingredients we'd want for ourselves.
+                        </p>
+                        <a href="#" class="btn btn--outline-dark">Read the Full Story</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== INGREDIENTS ===== -->
+        <section class="ingredients" id="ingredients">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">— What's Inside —</p>
+                    <h2 class="section-title section-title--light">Ingredients You<br>Can Trust</h2>
+                    <p class="section-subtitle section-subtitle--light">We source only the finest natural ingredients, free from synthetics, parabens, and unnecessary additives.</p>
+                </div>
+                <div class="ingredients-grid">
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">🌿</div>
+                        <h4>Wild Botanicals</h4>
+                        <p>Lavender, chamomile, rosehip, and nettle gathered from small organic farms.</p>
+                    </div>
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">🫒</div>
+                        <h4>Cold-Press Oils</h4>
+                        <p>Extra virgin olive, sweet almond, and coconut oils for deep nourishment.</p>
+                    </div>
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">🍯</div>
+                        <h4>Raw Honey</h4>
+                        <p>Locally sourced wildflower honey packed with antioxidants and natural humectants.</p>
+                    </div>
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">🌸</div>
+                        <h4>Essential Oils</h4>
+                        <p>Pure, undiluted essential oils for authentic scent and skin-loving benefits.</p>
+                    </div>
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">🪨</div>
+                        <h4>Natural Clays</h4>
+                        <p>Kaolin and rose clay for gentle cleansing and a luxuriously silky lather.</p>
+                    </div>
+                    <div class="ingredient-item reveal">
+                        <div class="ingredient-icon">✨</div>
+                        <h4>Shea Butter</h4>
+                        <p>Unrefined shea butter to lock in moisture and soothe sensitive skin naturally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <p class="section-eyebrow">— Kind Words —</p>
+                    <h2 class="section-title">Loved by Our Community</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"The Lavender Dreams soap has completely changed my evening routine. It smells absolutely incredible and my skin feels so soft. I'll never go back to store-bought."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <strong>Sarah M.</strong>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"I ordered the sampler set as a gift and ended up keeping half for myself! The packaging is gorgeous and the soaps smell like a real wildflower meadow."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div>
+                                <strong>Jamie L.</strong>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Finally a soap that doesn't dry out my sensitive skin! The Honey &amp; Oat bar is a dream. I've been recommending it to absolutely everyone I know."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong>Rachel K.</strong>
+                                <span>Verified Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== NEWSLETTER ===== -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-inner reveal">
+                    <div class="newsletter-botanical" aria-hidden="true">
+                        <svg width="110" height="110" viewBox="0 0 110 110" fill="none">
+                            <circle cx="55" cy="55" r="13" fill="#C2B09D" opacity="0.35"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(0 55 55)"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(60 55 55)"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(120 55 55)"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(180 55 55)"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(240 55 55)"/>
+                            <ellipse cx="55" cy="33" rx="7" ry="14" fill="#AB8563" opacity="0.25" transform="rotate(300 55 55)"/>
+                        </svg>
+                    </div>
+                    <p class="section-eyebrow">— Stay Connected —</p>
+                    <h2 class="section-title">Join the Wildflower Circle</h2>
+                    <p class="newsletter-text">Get first access to new seasonal blends, behind-the-scenes stories, and gentle offers — straight to your inbox.</p>
+                    <form class="newsletter-form" novalidate>
+                        <div class="form-group">
+                            <label for="emailInput" class="sr-only">Email address</label>
+                            <input type="email" id="emailInput" name="email" placeholder="Your email address" class="newsletter-input" required autocomplete="email">
+                            <button type="submit" class="btn btn--primary">Subscribe</button>
+                        </div>
+                        <p class="newsletter-note">No spam, ever. Just wildflower updates. Unsubscribe anytime.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo footer-logo">
+                        <span class="logo-accent">Among The</span>
+                        <span class="logo-main">Wildflowers</span>
+                    </a>
+                    <p class="footer-tagline">Handcrafted soaps made with wild<br>botanicals and gentle love.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Pinterest" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 20l4-9"/><path d="M10.7 13c.6 2.8 4.3 3 5.3.7 1.4-3.2-1-7.7-5-7.7C7.3 6 5 9 5 11.7c0 2 1 3.3 2.3 3.3 2 0 3.2-2.7 3.5-5.3"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Shop</h4>
+                        <ul>
+                            <li><a href="#">All Soaps</a></li>
+                            <li><a href="#">Floral Collection</a></li>
+                            <li><a href="#">Earthy Collection</a></li>
+                            <li><a href="#">Gift Sets</a></li>
+                            <li><a href="#">Seasonal Specials</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Story</a></li>
+                            <li><a href="#">Ingredients</a></li>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">Shipping &amp; Returns</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Wholesale</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Among The Wildflowers. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
